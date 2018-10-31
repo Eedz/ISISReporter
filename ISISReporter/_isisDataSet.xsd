@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_isisDataSet" targetNamespace="http://tempuri.org/_isisDataSet.xsd" xmlns:mstns="http://tempuri.org/_isisDataSet.xsd" xmlns="http://tempuri.org/_isisDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ISISConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ISISConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ISISReporter.Properties.Settings.GlobalReference.Default.ISISConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="qryCountryCodesTableAdapter" GeneratorDataComponentClassName="qryCountryCodesTableAdapter" Name="qryCountryCodes" UserDataComponentName="qryCountryCodesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ISISConnectionString (Settings)" DbObjectName="[itc-isis].dbo.qryCountryCodes" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT ISO_Code FROM dbo.qryCountryCodes ORDER BY ISO_Code</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ISO_Code" DataSetColumn="ISO_Code" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="qryStudyWavesTableAdapter" GeneratorDataComponentClassName="qryStudyWavesTableAdapter" Name="qryStudyWaves" UserDataComponentName="qryStudyWavesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ISISConnectionString (Settings)" DbObjectName="[itc-isis].dbo.qryStudyWaves" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT WaveID, StudyWave FROM dbo.qryStudyWaves ORDER BY ISO_Code, Wave</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="WaveID" DataSetColumn="WaveID" />
+              <Mapping SourceColumn="StudyWave" DataSetColumn="StudyWave" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="qrySurveyInfoTableAdapter" GeneratorDataComponentClassName="qrySurveyInfoTableAdapter" Name="qrySurveyInfo" UserDataComponentName="qrySurveyInfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ISISConnectionString (Settings)" DbObjectName="[itc-isis].dbo.qrySurveyInfo" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT ID, Survey, SurveyTitle, Study, Wave, Country, Languages, CC_ID, CountryCode, ISO_Code, UserGroup, [Group], CohortID, Cohort, IglooFilename, Mode, OldSurvCode, NCT, SurveyFileName, ReRun, ISISCreationDate, HideSurvey, GroupCode, GroupWebName, CohortCode, CohortWebName, ModeAbbrev, ModeLong, Mode2, WaveID, Locked, EnglishRouting FROM dbo.qrySurveyInfo ORDER BY ISO_Code, Wave</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Survey" DataSetColumn="Survey" />
+              <Mapping SourceColumn="SurveyTitle" DataSetColumn="SurveyTitle" />
+              <Mapping SourceColumn="Study" DataSetColumn="Study" />
+              <Mapping SourceColumn="Wave" DataSetColumn="Wave" />
+              <Mapping SourceColumn="Country" DataSetColumn="Country" />
+              <Mapping SourceColumn="Languages" DataSetColumn="Languages" />
+              <Mapping SourceColumn="CC_ID" DataSetColumn="CC_ID" />
+              <Mapping SourceColumn="CountryCode" DataSetColumn="CountryCode" />
+              <Mapping SourceColumn="ISO_Code" DataSetColumn="ISO_Code" />
+              <Mapping SourceColumn="UserGroup" DataSetColumn="UserGroup" />
+              <Mapping SourceColumn="Group" DataSetColumn="Group" />
+              <Mapping SourceColumn="CohortID" DataSetColumn="CohortID" />
+              <Mapping SourceColumn="Cohort" DataSetColumn="Cohort" />
+              <Mapping SourceColumn="IglooFilename" DataSetColumn="IglooFilename" />
+              <Mapping SourceColumn="Mode" DataSetColumn="Mode" />
+              <Mapping SourceColumn="OldSurvCode" DataSetColumn="OldSurvCode" />
+              <Mapping SourceColumn="NCT" DataSetColumn="NCT" />
+              <Mapping SourceColumn="SurveyFileName" DataSetColumn="SurveyFileName" />
+              <Mapping SourceColumn="ReRun" DataSetColumn="ReRun" />
+              <Mapping SourceColumn="ISISCreationDate" DataSetColumn="ISISCreationDate" />
+              <Mapping SourceColumn="HideSurvey" DataSetColumn="HideSurvey" />
+              <Mapping SourceColumn="GroupCode" DataSetColumn="GroupCode" />
+              <Mapping SourceColumn="GroupWebName" DataSetColumn="GroupWebName" />
+              <Mapping SourceColumn="CohortCode" DataSetColumn="CohortCode" />
+              <Mapping SourceColumn="CohortWebName" DataSetColumn="CohortWebName" />
+              <Mapping SourceColumn="ModeAbbrev" DataSetColumn="ModeAbbrev" />
+              <Mapping SourceColumn="ModeLong" DataSetColumn="ModeLong" />
+              <Mapping SourceColumn="Mode2" DataSetColumn="Mode2" />
+              <Mapping SourceColumn="WaveID" DataSetColumn="WaveID" />
+              <Mapping SourceColumn="Locked" DataSetColumn="Locked" />
+              <Mapping SourceColumn="EnglishRouting" DataSetColumn="EnglishRouting" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="ISISConnectionString (Settings)" DbObjectName="[itc-isis].dbo.qrySurveyInfo" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillSurveysByCountry" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetSurveysByCountry" GeneratorSourceName="FillSurveysByCountry" GetMethodModifier="Public" GetMethodName="GetSurveysByCountry" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetSurveysByCountry" UserSourceName="FillSurveysByCountry">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT ID, Survey, SurveyTitle, Study, Wave, Country, Languages, CC_ID, CountryCode, ISO_Code, UserGroup, [Group], CohortID, Cohort, IglooFilename, Mode, OldSurvCode, NCT, SurveyFileName, ReRun, ISISCreationDate, HideSurvey, GroupCode, GroupWebName, CohortCode, CohortWebName, ModeAbbrev, ModeLong, Mode2, WaveID, Locked, EnglishRouting FROM dbo.qrySurveyInfo WHERE ISO_Code = (@filter) ORDER BY ISO_Code, Wave </CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="filter" ColumnName="ISO_Code" DataSourceName="[itc-isis].dbo.qrySurveyInfo" DataTypeServer="nvarchar(3)" DbType="String" Direction="Input" ParameterName="@filter" Precision="0" ProviderType="NVarChar" Scale="0" Size="3" SourceColumn="ISO_Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="ISISConnectionString (Settings)" DbObjectName="[itc-isis].dbo.qrySurveyInfo" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillSurveysByWave" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetSurveysByWave" GeneratorSourceName="FillSurveysByWave" GetMethodModifier="Public" GetMethodName="GetSurveysByWave" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetSurveysByWave" UserSourceName="FillSurveysByWave">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT ID, Survey, SurveyTitle, Study, Wave, Country, Languages, CC_ID, CountryCode, ISO_Code, UserGroup, [Group], CohortID, Cohort, IglooFilename, Mode, OldSurvCode, NCT, SurveyFileName, ReRun, ISISCreationDate, HideSurvey, GroupCode, GroupWebName, CohortCode, CohortWebName, ModeAbbrev, ModeLong, Mode2, WaveID, Locked, EnglishRouting FROM dbo.qrySurveyInfo WHERE WaveID = (@filter) ORDER BY ISO_Code, Wave</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="filter" ColumnName="WaveID" DataSourceName="[itc-isis].dbo.qrySurveyInfo" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@filter" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="WaveID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="qrySurveyQuestionsTableAdapter" GeneratorDataComponentClassName="qrySurveyQuestionsTableAdapter" Name="qrySurveyQuestions" UserDataComponentName="qrySurveyQuestionsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ISISConnectionString (Settings)" DbObjectName="[itc-isis].dbo.qrySurveyQuestions" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, SurvID, Survey, VarName, refVarName, Qnum, SeriesQnum, AltQNum, PreP#, PreP, PreI#, PreI, PreA#, PreA, LitQ#, LitQ, PstI#, PstI, PstP#, PstP, RespName, RespOptions, NRName, NRCodes, VarLabel, ContentNum, Content, TopicNum, Topic, ProductNum, Product, DomainNum, Domain, NumCol, NumDec, NumFmt, VarType, ScriptOnly, TableFormat, CorrectedFlag, Deleted, AltQnum2, AltQnum3, WaveID, Locked, EnglishRouting FROM dbo.qrySurveyQuestions</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="SurvID" DataSetColumn="SurvID" />
+              <Mapping SourceColumn="Survey" DataSetColumn="Survey" />
+              <Mapping SourceColumn="VarName" DataSetColumn="VarName" />
+              <Mapping SourceColumn="refVarName" DataSetColumn="refVarName" />
+              <Mapping SourceColumn="Qnum" DataSetColumn="Qnum" />
+              <Mapping SourceColumn="SeriesQnum" DataSetColumn="SeriesQnum" />
+              <Mapping SourceColumn="AltQNum" DataSetColumn="AltQNum" />
+              <Mapping SourceColumn="PreP#" DataSetColumn="PreP#" />
+              <Mapping SourceColumn="PreP" DataSetColumn="PreP" />
+              <Mapping SourceColumn="PreI#" DataSetColumn="PreI#" />
+              <Mapping SourceColumn="PreI" DataSetColumn="PreI" />
+              <Mapping SourceColumn="PreA#" DataSetColumn="PreA#" />
+              <Mapping SourceColumn="PreA" DataSetColumn="PreA" />
+              <Mapping SourceColumn="LitQ#" DataSetColumn="LitQ#" />
+              <Mapping SourceColumn="LitQ" DataSetColumn="LitQ" />
+              <Mapping SourceColumn="PstI#" DataSetColumn="PstI#" />
+              <Mapping SourceColumn="PstI" DataSetColumn="PstI" />
+              <Mapping SourceColumn="PstP#" DataSetColumn="PstP#" />
+              <Mapping SourceColumn="PstP" DataSetColumn="PstP" />
+              <Mapping SourceColumn="RespName" DataSetColumn="RespName" />
+              <Mapping SourceColumn="RespOptions" DataSetColumn="RespOptions" />
+              <Mapping SourceColumn="NRName" DataSetColumn="NRName" />
+              <Mapping SourceColumn="NRCodes" DataSetColumn="NRCodes" />
+              <Mapping SourceColumn="VarLabel" DataSetColumn="VarLabel" />
+              <Mapping SourceColumn="ContentNum" DataSetColumn="ContentNum" />
+              <Mapping SourceColumn="Content" DataSetColumn="Content" />
+              <Mapping SourceColumn="TopicNum" DataSetColumn="TopicNum" />
+              <Mapping SourceColumn="Topic" DataSetColumn="Topic" />
+              <Mapping SourceColumn="ProductNum" DataSetColumn="ProductNum" />
+              <Mapping SourceColumn="Product" DataSetColumn="Product" />
+              <Mapping SourceColumn="DomainNum" DataSetColumn="DomainNum" />
+              <Mapping SourceColumn="Domain" DataSetColumn="Domain" />
+              <Mapping SourceColumn="NumCol" DataSetColumn="NumCol" />
+              <Mapping SourceColumn="NumDec" DataSetColumn="NumDec" />
+              <Mapping SourceColumn="NumFmt" DataSetColumn="NumFmt" />
+              <Mapping SourceColumn="VarType" DataSetColumn="VarType" />
+              <Mapping SourceColumn="ScriptOnly" DataSetColumn="ScriptOnly" />
+              <Mapping SourceColumn="TableFormat" DataSetColumn="TableFormat" />
+              <Mapping SourceColumn="CorrectedFlag" DataSetColumn="CorrectedFlag" />
+              <Mapping SourceColumn="Deleted" DataSetColumn="Deleted" />
+              <Mapping SourceColumn="AltQnum2" DataSetColumn="AltQnum2" />
+              <Mapping SourceColumn="AltQnum3" DataSetColumn="AltQnum3" />
+              <Mapping SourceColumn="WaveID" DataSetColumn="WaveID" />
+              <Mapping SourceColumn="Locked" DataSetColumn="Locked" />
+              <Mapping SourceColumn="EnglishRouting" DataSetColumn="EnglishRouting" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_isisDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_isisDataSet" msprop:Generator_UserDSName="_isisDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="qryCountryCodes" msprop:Generator_TableClassName="qryCountryCodesDataTable" msprop:Generator_TableVarName="tableqryCountryCodes" msprop:Generator_TablePropName="qryCountryCodes" msprop:Generator_RowDeletingName="qryCountryCodesRowDeleting" msprop:Generator_RowChangingName="qryCountryCodesRowChanging" msprop:Generator_RowEvHandlerName="qryCountryCodesRowChangeEventHandler" msprop:Generator_RowDeletedName="qryCountryCodesRowDeleted" msprop:Generator_UserTableName="qryCountryCodes" msprop:Generator_RowChangedName="qryCountryCodesRowChanged" msprop:Generator_RowEvArgName="qryCountryCodesRowChangeEvent" msprop:Generator_RowClassName="qryCountryCodesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ISO_Code" msprop:Generator_ColumnVarNameInTable="columnISO_Code" msprop:Generator_ColumnPropNameInRow="ISO_Code" msprop:Generator_ColumnPropNameInTable="ISO_CodeColumn" msprop:Generator_UserColumnName="ISO_Code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="qryStudyWaves" msprop:Generator_TableClassName="qryStudyWavesDataTable" msprop:Generator_TableVarName="tableqryStudyWaves" msprop:Generator_TablePropName="qryStudyWaves" msprop:Generator_RowDeletingName="qryStudyWavesRowDeleting" msprop:Generator_RowChangingName="qryStudyWavesRowChanging" msprop:Generator_RowEvHandlerName="qryStudyWavesRowChangeEventHandler" msprop:Generator_RowDeletedName="qryStudyWavesRowDeleted" msprop:Generator_UserTableName="qryStudyWaves" msprop:Generator_RowChangedName="qryStudyWavesRowChanged" msprop:Generator_RowEvArgName="qryStudyWavesRowChangeEvent" msprop:Generator_RowClassName="qryStudyWavesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WaveID" msprop:Generator_ColumnVarNameInTable="columnWaveID" msprop:Generator_ColumnPropNameInRow="WaveID" msprop:Generator_ColumnPropNameInTable="WaveIDColumn" msprop:Generator_UserColumnName="WaveID" type="xs:int" />
+              <xs:element name="StudyWave" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnStudyWave" msprop:Generator_ColumnPropNameInRow="StudyWave" msprop:Generator_ColumnPropNameInTable="StudyWaveColumn" msprop:Generator_UserColumnName="StudyWave" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="qrySurveyInfo" msprop:Generator_TableClassName="qrySurveyInfoDataTable" msprop:Generator_TableVarName="tableqrySurveyInfo" msprop:Generator_TablePropName="qrySurveyInfo" msprop:Generator_RowDeletingName="qrySurveyInfoRowDeleting" msprop:Generator_RowChangingName="qrySurveyInfoRowChanging" msprop:Generator_RowEvHandlerName="qrySurveyInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="qrySurveyInfoRowDeleted" msprop:Generator_UserTableName="qrySurveyInfo" msprop:Generator_RowChangedName="qrySurveyInfoRowChanged" msprop:Generator_RowEvArgName="qrySurveyInfoRowChangeEvent" msprop:Generator_RowClassName="qrySurveyInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Survey" msprop:Generator_ColumnVarNameInTable="columnSurvey" msprop:Generator_ColumnPropNameInRow="Survey" msprop:Generator_ColumnPropNameInTable="SurveyColumn" msprop:Generator_UserColumnName="Survey">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SurveyTitle" msprop:Generator_ColumnVarNameInTable="columnSurveyTitle" msprop:Generator_ColumnPropNameInRow="SurveyTitle" msprop:Generator_ColumnPropNameInTable="SurveyTitleColumn" msprop:Generator_UserColumnName="SurveyTitle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Study" msprop:Generator_ColumnVarNameInTable="columnStudy" msprop:Generator_ColumnPropNameInRow="Study" msprop:Generator_ColumnPropNameInTable="StudyColumn" msprop:Generator_UserColumnName="Study" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Wave" msprop:Generator_ColumnVarNameInTable="columnWave" msprop:Generator_ColumnPropNameInRow="Wave" msprop:Generator_ColumnPropNameInTable="WaveColumn" msprop:Generator_UserColumnName="Wave" type="xs:double" />
+              <xs:element name="Country" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnPropNameInTable="CountryColumn" msprop:Generator_UserColumnName="Country" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Languages" msprop:Generator_ColumnVarNameInTable="columnLanguages" msprop:Generator_ColumnPropNameInRow="Languages" msprop:Generator_ColumnPropNameInTable="LanguagesColumn" msprop:Generator_UserColumnName="Languages" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CC_ID" msprop:Generator_ColumnVarNameInTable="columnCC_ID" msprop:Generator_ColumnPropNameInRow="CC_ID" msprop:Generator_ColumnPropNameInTable="CC_IDColumn" msprop:Generator_UserColumnName="CC_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CountryCode" msprop:Generator_ColumnVarNameInTable="columnCountryCode" msprop:Generator_ColumnPropNameInRow="CountryCode" msprop:Generator_ColumnPropNameInTable="CountryCodeColumn" msprop:Generator_UserColumnName="CountryCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ISO_Code" msprop:Generator_ColumnVarNameInTable="columnISO_Code" msprop:Generator_ColumnPropNameInRow="ISO_Code" msprop:Generator_ColumnPropNameInTable="ISO_CodeColumn" msprop:Generator_UserColumnName="ISO_Code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserGroup" msprop:Generator_ColumnVarNameInTable="columnUserGroup" msprop:Generator_ColumnPropNameInRow="UserGroup" msprop:Generator_ColumnPropNameInTable="UserGroupColumn" msprop:Generator_UserColumnName="UserGroup" type="xs:int" minOccurs="0" />
+              <xs:element name="Group" msprop:Generator_ColumnVarNameInTable="columnGroup" msprop:Generator_ColumnPropNameInRow="Group" msprop:Generator_ColumnPropNameInTable="GroupColumn" msprop:Generator_UserColumnName="Group" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CohortID" msprop:Generator_ColumnVarNameInTable="columnCohortID" msprop:Generator_ColumnPropNameInRow="CohortID" msprop:Generator_ColumnPropNameInTable="CohortIDColumn" msprop:Generator_UserColumnName="CohortID" type="xs:int" minOccurs="0" />
+              <xs:element name="Cohort" msprop:Generator_ColumnVarNameInTable="columnCohort" msprop:Generator_ColumnPropNameInRow="Cohort" msprop:Generator_ColumnPropNameInTable="CohortColumn" msprop:Generator_UserColumnName="Cohort" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IglooFilename" msprop:Generator_ColumnVarNameInTable="columnIglooFilename" msprop:Generator_ColumnPropNameInRow="IglooFilename" msprop:Generator_ColumnPropNameInTable="IglooFilenameColumn" msprop:Generator_UserColumnName="IglooFilename" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mode" msprop:Generator_ColumnVarNameInTable="columnMode" msprop:Generator_ColumnPropNameInRow="Mode" msprop:Generator_ColumnPropNameInTable="ModeColumn" msprop:Generator_UserColumnName="Mode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OldSurvCode" msprop:Generator_ColumnVarNameInTable="columnOldSurvCode" msprop:Generator_ColumnPropNameInRow="OldSurvCode" msprop:Generator_ColumnPropNameInTable="OldSurvCodeColumn" msprop:Generator_UserColumnName="OldSurvCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NCT" msprop:Generator_ColumnVarNameInTable="columnNCT" msprop:Generator_ColumnPropNameInRow="NCT" msprop:Generator_ColumnPropNameInTable="NCTColumn" msprop:Generator_UserColumnName="NCT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SurveyFileName" msprop:Generator_ColumnVarNameInTable="columnSurveyFileName" msprop:Generator_ColumnPropNameInRow="SurveyFileName" msprop:Generator_ColumnPropNameInTable="SurveyFileNameColumn" msprop:Generator_UserColumnName="SurveyFileName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReRun" msprop:Generator_ColumnVarNameInTable="columnReRun" msprop:Generator_ColumnPropNameInRow="ReRun" msprop:Generator_ColumnPropNameInTable="ReRunColumn" msprop:Generator_UserColumnName="ReRun" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ISISCreationDate" msprop:Generator_ColumnVarNameInTable="columnISISCreationDate" msprop:Generator_ColumnPropNameInRow="ISISCreationDate" msprop:Generator_ColumnPropNameInTable="ISISCreationDateColumn" msprop:Generator_UserColumnName="ISISCreationDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HideSurvey" msprop:Generator_ColumnVarNameInTable="columnHideSurvey" msprop:Generator_ColumnPropNameInRow="HideSurvey" msprop:Generator_ColumnPropNameInTable="HideSurveyColumn" msprop:Generator_UserColumnName="HideSurvey" type="xs:boolean" minOccurs="0" />
+              <xs:element name="GroupCode" msprop:Generator_ColumnVarNameInTable="columnGroupCode" msprop:Generator_ColumnPropNameInRow="GroupCode" msprop:Generator_ColumnPropNameInTable="GroupCodeColumn" msprop:Generator_UserColumnName="GroupCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GroupWebName" msprop:Generator_ColumnVarNameInTable="columnGroupWebName" msprop:Generator_ColumnPropNameInRow="GroupWebName" msprop:Generator_ColumnPropNameInTable="GroupWebNameColumn" msprop:Generator_UserColumnName="GroupWebName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CohortCode" msprop:Generator_ColumnVarNameInTable="columnCohortCode" msprop:Generator_ColumnPropNameInRow="CohortCode" msprop:Generator_ColumnPropNameInTable="CohortCodeColumn" msprop:Generator_UserColumnName="CohortCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CohortWebName" msprop:Generator_ColumnVarNameInTable="columnCohortWebName" msprop:Generator_ColumnPropNameInRow="CohortWebName" msprop:Generator_ColumnPropNameInTable="CohortWebNameColumn" msprop:Generator_UserColumnName="CohortWebName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ModeAbbrev" msprop:Generator_ColumnVarNameInTable="columnModeAbbrev" msprop:Generator_ColumnPropNameInRow="ModeAbbrev" msprop:Generator_ColumnPropNameInTable="ModeAbbrevColumn" msprop:Generator_UserColumnName="ModeAbbrev" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ModeLong" msprop:Generator_ColumnVarNameInTable="columnModeLong" msprop:Generator_ColumnPropNameInRow="ModeLong" msprop:Generator_ColumnPropNameInTable="ModeLongColumn" msprop:Generator_UserColumnName="ModeLong" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mode2" msprop:Generator_ColumnVarNameInTable="columnMode2" msprop:Generator_ColumnPropNameInRow="Mode2" msprop:Generator_ColumnPropNameInTable="Mode2Column" msprop:Generator_UserColumnName="Mode2" type="xs:int" minOccurs="0" />
+              <xs:element name="WaveID" msprop:Generator_ColumnVarNameInTable="columnWaveID" msprop:Generator_ColumnPropNameInRow="WaveID" msprop:Generator_ColumnPropNameInTable="WaveIDColumn" msprop:Generator_UserColumnName="WaveID" type="xs:int" minOccurs="0" />
+              <xs:element name="Locked" msprop:Generator_ColumnVarNameInTable="columnLocked" msprop:Generator_ColumnPropNameInRow="Locked" msprop:Generator_ColumnPropNameInTable="LockedColumn" msprop:Generator_UserColumnName="Locked" type="xs:boolean" />
+              <xs:element name="EnglishRouting" msprop:Generator_ColumnVarNameInTable="columnEnglishRouting" msprop:Generator_ColumnPropNameInRow="EnglishRouting" msprop:Generator_ColumnPropNameInTable="EnglishRoutingColumn" msprop:Generator_UserColumnName="EnglishRouting" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="qrySurveyQuestions" msprop:Generator_TableClassName="qrySurveyQuestionsDataTable" msprop:Generator_TableVarName="tableqrySurveyQuestions" msprop:Generator_TablePropName="qrySurveyQuestions" msprop:Generator_RowDeletingName="qrySurveyQuestionsRowDeleting" msprop:Generator_RowChangingName="qrySurveyQuestionsRowChanging" msprop:Generator_RowEvHandlerName="qrySurveyQuestionsRowChangeEventHandler" msprop:Generator_RowDeletedName="qrySurveyQuestionsRowDeleted" msprop:Generator_UserTableName="qrySurveyQuestions" msprop:Generator_RowChangedName="qrySurveyQuestionsRowChanged" msprop:Generator_RowEvArgName="qrySurveyQuestionsRowChangeEvent" msprop:Generator_RowClassName="qrySurveyQuestionsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="SurvID" msprop:Generator_ColumnVarNameInTable="columnSurvID" msprop:Generator_ColumnPropNameInRow="SurvID" msprop:Generator_ColumnPropNameInTable="SurvIDColumn" msprop:Generator_UserColumnName="SurvID" type="xs:int" />
+              <xs:element name="Survey" msprop:Generator_ColumnVarNameInTable="columnSurvey" msprop:Generator_ColumnPropNameInRow="Survey" msprop:Generator_ColumnPropNameInTable="SurveyColumn" msprop:Generator_UserColumnName="Survey">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VarName" msprop:Generator_ColumnVarNameInTable="columnVarName" msprop:Generator_ColumnPropNameInRow="VarName" msprop:Generator_ColumnPropNameInTable="VarNameColumn" msprop:Generator_UserColumnName="VarName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="refVarName" msprop:Generator_ColumnVarNameInTable="columnrefVarName" msprop:Generator_ColumnPropNameInRow="refVarName" msprop:Generator_ColumnPropNameInTable="refVarNameColumn" msprop:Generator_UserColumnName="refVarName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qnum" msprop:Generator_ColumnVarNameInTable="columnQnum" msprop:Generator_ColumnPropNameInRow="Qnum" msprop:Generator_ColumnPropNameInTable="QnumColumn" msprop:Generator_UserColumnName="Qnum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SeriesQnum" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSeriesQnum" msprop:Generator_ColumnPropNameInRow="SeriesQnum" msprop:Generator_ColumnPropNameInTable="SeriesQnumColumn" msprop:Generator_UserColumnName="SeriesQnum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AltQNum" msprop:Generator_ColumnVarNameInTable="columnAltQNum" msprop:Generator_ColumnPropNameInRow="AltQNum" msprop:Generator_ColumnPropNameInTable="AltQNumColumn" msprop:Generator_UserColumnName="AltQNum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PreP_x0023_" msprop:Generator_ColumnVarNameInTable="_columnPreP_" msprop:Generator_ColumnPropNameInRow="_PreP_" msprop:Generator_ColumnPropNameInTable="_PreP_Column" msprop:Generator_UserColumnName="PreP#" type="xs:int" />
+              <xs:element name="PreP" msprop:Generator_ColumnVarNameInTable="columnPreP" msprop:Generator_ColumnPropNameInRow="PreP" msprop:Generator_ColumnPropNameInTable="PrePColumn" msprop:Generator_UserColumnName="PreP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PreI_x0023_" msprop:Generator_ColumnVarNameInTable="_columnPreI_" msprop:Generator_ColumnPropNameInRow="_PreI_" msprop:Generator_ColumnPropNameInTable="_PreI_Column" msprop:Generator_UserColumnName="PreI#" type="xs:int" />
+              <xs:element name="PreI" msprop:Generator_ColumnVarNameInTable="columnPreI" msprop:Generator_ColumnPropNameInRow="PreI" msprop:Generator_ColumnPropNameInTable="PreIColumn" msprop:Generator_UserColumnName="PreI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PreA_x0023_" msprop:Generator_ColumnVarNameInTable="_columnPreA_" msprop:Generator_ColumnPropNameInRow="_PreA_" msprop:Generator_ColumnPropNameInTable="_PreA_Column" msprop:Generator_UserColumnName="PreA#" type="xs:int" />
+              <xs:element name="PreA" msprop:Generator_ColumnVarNameInTable="columnPreA" msprop:Generator_ColumnPropNameInRow="PreA" msprop:Generator_ColumnPropNameInTable="PreAColumn" msprop:Generator_UserColumnName="PreA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LitQ_x0023_" msprop:Generator_ColumnVarNameInTable="_columnLitQ_" msprop:Generator_ColumnPropNameInRow="_LitQ_" msprop:Generator_ColumnPropNameInTable="_LitQ_Column" msprop:Generator_UserColumnName="LitQ#" type="xs:int" />
+              <xs:element name="LitQ" msprop:Generator_ColumnVarNameInTable="columnLitQ" msprop:Generator_ColumnPropNameInRow="LitQ" msprop:Generator_ColumnPropNameInTable="LitQColumn" msprop:Generator_UserColumnName="LitQ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PstI_x0023_" msprop:Generator_ColumnVarNameInTable="_columnPstI_" msprop:Generator_ColumnPropNameInRow="_PstI_" msprop:Generator_ColumnPropNameInTable="_PstI_Column" msprop:Generator_UserColumnName="PstI#" type="xs:int" />
+              <xs:element name="PstI" msprop:Generator_ColumnVarNameInTable="columnPstI" msprop:Generator_ColumnPropNameInRow="PstI" msprop:Generator_ColumnPropNameInTable="PstIColumn" msprop:Generator_UserColumnName="PstI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PstP_x0023_" msprop:Generator_ColumnVarNameInTable="_columnPstP_" msprop:Generator_ColumnPropNameInRow="_PstP_" msprop:Generator_ColumnPropNameInTable="_PstP_Column" msprop:Generator_UserColumnName="PstP#" type="xs:int" />
+              <xs:element name="PstP" msprop:Generator_ColumnVarNameInTable="columnPstP" msprop:Generator_ColumnPropNameInRow="PstP" msprop:Generator_ColumnPropNameInTable="PstPColumn" msprop:Generator_UserColumnName="PstP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RespName" msprop:Generator_ColumnVarNameInTable="columnRespName" msprop:Generator_ColumnPropNameInRow="RespName" msprop:Generator_ColumnPropNameInTable="RespNameColumn" msprop:Generator_UserColumnName="RespName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RespOptions" msprop:Generator_ColumnVarNameInTable="columnRespOptions" msprop:Generator_ColumnPropNameInRow="RespOptions" msprop:Generator_ColumnPropNameInTable="RespOptionsColumn" msprop:Generator_UserColumnName="RespOptions" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NRName" msprop:Generator_ColumnVarNameInTable="columnNRName" msprop:Generator_ColumnPropNameInRow="NRName" msprop:Generator_ColumnPropNameInTable="NRNameColumn" msprop:Generator_UserColumnName="NRName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NRCodes" msprop:Generator_ColumnVarNameInTable="columnNRCodes" msprop:Generator_ColumnPropNameInRow="NRCodes" msprop:Generator_ColumnPropNameInTable="NRCodesColumn" msprop:Generator_UserColumnName="NRCodes" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VarLabel" msprop:Generator_ColumnVarNameInTable="columnVarLabel" msprop:Generator_ColumnPropNameInRow="VarLabel" msprop:Generator_ColumnPropNameInTable="VarLabelColumn" msprop:Generator_UserColumnName="VarLabel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContentNum" msprop:Generator_ColumnVarNameInTable="columnContentNum" msprop:Generator_ColumnPropNameInRow="ContentNum" msprop:Generator_ColumnPropNameInTable="ContentNumColumn" msprop:Generator_UserColumnName="ContentNum" type="xs:int" />
+              <xs:element name="Content" msprop:Generator_ColumnVarNameInTable="columnContent" msprop:Generator_ColumnPropNameInRow="Content" msprop:Generator_ColumnPropNameInTable="ContentColumn" msprop:Generator_UserColumnName="Content" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TopicNum" msprop:Generator_ColumnVarNameInTable="columnTopicNum" msprop:Generator_ColumnPropNameInRow="TopicNum" msprop:Generator_ColumnPropNameInTable="TopicNumColumn" msprop:Generator_UserColumnName="TopicNum" type="xs:int" />
+              <xs:element name="Topic" msprop:Generator_ColumnVarNameInTable="columnTopic" msprop:Generator_ColumnPropNameInRow="Topic" msprop:Generator_ColumnPropNameInTable="TopicColumn" msprop:Generator_UserColumnName="Topic" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductNum" msprop:Generator_ColumnVarNameInTable="columnProductNum" msprop:Generator_ColumnPropNameInRow="ProductNum" msprop:Generator_ColumnPropNameInTable="ProductNumColumn" msprop:Generator_UserColumnName="ProductNum" type="xs:int" />
+              <xs:element name="Product" msprop:Generator_ColumnVarNameInTable="columnProduct" msprop:Generator_ColumnPropNameInRow="Product" msprop:Generator_ColumnPropNameInTable="ProductColumn" msprop:Generator_UserColumnName="Product" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DomainNum" msprop:Generator_ColumnVarNameInTable="columnDomainNum" msprop:Generator_ColumnPropNameInRow="DomainNum" msprop:Generator_ColumnPropNameInTable="DomainNumColumn" msprop:Generator_UserColumnName="DomainNum" type="xs:int" />
+              <xs:element name="Domain" msprop:Generator_ColumnVarNameInTable="columnDomain" msprop:Generator_ColumnPropNameInRow="Domain" msprop:Generator_ColumnPropNameInTable="DomainColumn" msprop:Generator_UserColumnName="Domain" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumCol" msprop:Generator_ColumnVarNameInTable="columnNumCol" msprop:Generator_ColumnPropNameInRow="NumCol" msprop:Generator_ColumnPropNameInTable="NumColColumn" msprop:Generator_UserColumnName="NumCol" type="xs:int" minOccurs="0" />
+              <xs:element name="NumDec" msprop:Generator_ColumnVarNameInTable="columnNumDec" msprop:Generator_ColumnPropNameInRow="NumDec" msprop:Generator_ColumnPropNameInTable="NumDecColumn" msprop:Generator_UserColumnName="NumDec" type="xs:int" minOccurs="0" />
+              <xs:element name="NumFmt" msprop:Generator_ColumnVarNameInTable="columnNumFmt" msprop:Generator_ColumnPropNameInRow="NumFmt" msprop:Generator_ColumnPropNameInTable="NumFmtColumn" msprop:Generator_UserColumnName="NumFmt" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VarType" msprop:Generator_ColumnVarNameInTable="columnVarType" msprop:Generator_ColumnPropNameInRow="VarType" msprop:Generator_ColumnPropNameInTable="VarTypeColumn" msprop:Generator_UserColumnName="VarType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ScriptOnly" msprop:Generator_ColumnVarNameInTable="columnScriptOnly" msprop:Generator_ColumnPropNameInRow="ScriptOnly" msprop:Generator_ColumnPropNameInTable="ScriptOnlyColumn" msprop:Generator_UserColumnName="ScriptOnly" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TableFormat" msprop:Generator_ColumnVarNameInTable="columnTableFormat" msprop:Generator_ColumnPropNameInRow="TableFormat" msprop:Generator_ColumnPropNameInTable="TableFormatColumn" msprop:Generator_UserColumnName="TableFormat" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CorrectedFlag" msprop:Generator_ColumnVarNameInTable="columnCorrectedFlag" msprop:Generator_ColumnPropNameInRow="CorrectedFlag" msprop:Generator_ColumnPropNameInTable="CorrectedFlagColumn" msprop:Generator_UserColumnName="CorrectedFlag" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" msprop:Generator_UserColumnName="Deleted" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AltQnum2" msprop:Generator_ColumnVarNameInTable="columnAltQnum2" msprop:Generator_ColumnPropNameInRow="AltQnum2" msprop:Generator_ColumnPropNameInTable="AltQnum2Column" msprop:Generator_UserColumnName="AltQnum2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AltQnum3" msprop:Generator_ColumnVarNameInTable="columnAltQnum3" msprop:Generator_ColumnPropNameInRow="AltQnum3" msprop:Generator_ColumnPropNameInTable="AltQnum3Column" msprop:Generator_UserColumnName="AltQnum3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WaveID" msprop:Generator_ColumnVarNameInTable="columnWaveID" msprop:Generator_ColumnPropNameInRow="WaveID" msprop:Generator_ColumnPropNameInTable="WaveIDColumn" msprop:Generator_UserColumnName="WaveID" type="xs:int" minOccurs="0" />
+              <xs:element name="Locked" msprop:Generator_ColumnVarNameInTable="columnLocked" msprop:Generator_ColumnPropNameInRow="Locked" msprop:Generator_ColumnPropNameInTable="LockedColumn" msprop:Generator_UserColumnName="Locked" type="xs:boolean" />
+              <xs:element name="EnglishRouting" msprop:Generator_ColumnVarNameInTable="columnEnglishRouting" msprop:Generator_ColumnPropNameInRow="EnglishRouting" msprop:Generator_ColumnPropNameInTable="EnglishRoutingColumn" msprop:Generator_UserColumnName="EnglishRouting" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:qryStudyWaves" />
+      <xs:field xpath="mstns:WaveID" />
+    </xs:unique>
+    <xs:unique name="qrySurveyInfo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:qrySurveyInfo" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
