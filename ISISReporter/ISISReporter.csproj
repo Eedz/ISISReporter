@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ISISReporter.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommentOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommentOptionsForm.Designer.cs">
+      <DependentUpon>CommentOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabelOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabelOptionsForm.Designer.cs">
+      <DependentUpon>LabelOptionsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,6 +66,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportWordingOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportWordingOptionsForm.Designer.cs">
+      <DependentUpon>ReportWordingOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TranslationOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TranslationOptionsForm.Designer.cs">
+      <DependentUpon>TranslationOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WordingOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WordingOptionsForm.Designer.cs">
+      <DependentUpon>WordingOptionsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="_isisDataSet.cs">
       <DependentUpon>_isisDataSet.xsd</DependentUpon>
       <SubType>code</SubType>
@@ -62,6 +93,13 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
+    <EmbeddedResource Include="CommentOptionsForm.resx">
+      <DependentUpon>CommentOptionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabelOptionsForm.resx">
+      <DependentUpon>LabelOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +112,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ReportWordingOptionsForm.resx">
+      <DependentUpon>ReportWordingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TranslationOptionsForm.resx">
+      <DependentUpon>TranslationOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WordingOptionsForm.resx">
+      <DependentUpon>WordingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

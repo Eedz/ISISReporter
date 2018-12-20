@@ -29,33 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelSelectSurveyInner = new System.Windows.Forms.Panel();
+            this.lstSelectedSurveys = new System.Windows.Forms.ListBox();
             this.optSelectWave = new System.Windows.Forms.RadioButton();
             this.lstCountryWave = new System.Windows.Forms.ListBox();
             this.optSelectCountry = new System.Windows.Forms.RadioButton();
             this.optSelectSurvey = new System.Windows.Forms.RadioButton();
             this.cmdRemoveSurvey = new System.Windows.Forms.Button();
-            this.lstSelectedSurveys = new System.Windows.Forms.ListBox();
             this.cboSelectSurvey = new System.Windows.Forms.ComboBox();
             this.cmdAddSurvey = new System.Windows.Forms.Button();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.lstPrefixes = new System.Windows.Forms.ListBox();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.cmdRemoveVar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmdAddVar = new System.Windows.Forms.Button();
+            this.lstSelectedVarNames = new System.Windows.Forms.ListBox();
+            this.cboSelectVarName = new System.Windows.Forms.ComboBox();
             this.cmdExpandSurveyPanel = new System.Windows.Forms.Button();
             this.cmdExpandVarNamePanel = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.lblSurveyBasedReports = new System.Windows.Forms.Label();
+            this.lblVarNameBasedReports = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.qrySurveyQuestionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._isisDataSet = new ISISReporter._isisDataSet();
@@ -68,64 +64,71 @@
             this.qryCountryCodesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.qryCountryCodesTableAdapter = new ISISReporter._isisDataSetTableAdapters.qryCountryCodesTableAdapter();
             this.cmdGenerateReport = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.cmdWordingOptions = new System.Windows.Forms.Button();
+            this.optSurveyOverview = new System.Windows.Forms.RadioButton();
+            this.optSurveySections = new System.Windows.Forms.RadioButton();
+            this.optSurveySyntax = new System.Windows.Forms.RadioButton();
+            this.optSurveyByVarName = new System.Windows.Forms.RadioButton();
+            this.optSurveyByLabel = new System.Windows.Forms.RadioButton();
+            this.optOrderCompare = new System.Windows.Forms.RadioButton();
+            this.cmdLabelOptions = new System.Windows.Forms.Button();
+            this.cmdCommentOptions = new System.Windows.Forms.Button();
+            this.cmdTranslationOptions = new System.Windows.Forms.Button();
+            this.optHarmony = new System.Windows.Forms.RadioButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.optProductCrosstab = new System.Windows.Forms.RadioButton();
+            this.lblLabelBasedReports = new System.Windows.Forms.Label();
+            this.optVarList = new System.Windows.Forms.RadioButton();
+            this.panelSelectSurveyOuter = new System.Windows.Forms.Panel();
+            this.panelSelectVarNameInner = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.panelSelectVarNameOuter = new System.Windows.Forms.Panel();
+            this.lblReportOptions = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panelSelectSurveyInner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.qrySurveyQuestionsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._isisDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qrySurveyInfoBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qryStudyWavesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qryCountryCodesBindingSource1)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panelSelectSurveyOuter.SuspendLayout();
+            this.panelSelectVarNameInner.SuspendLayout();
+            this.panelSelectVarNameOuter.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Location = new System.Drawing.Point(52, 53);
-            this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.splitContainer1.Panel1.Controls.Add(this.label1);
-            this.splitContainer1.Panel1.Controls.Add(this.panel1);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.splitContainer1.Panel2.Controls.Add(this.label2);
-            this.splitContainer1.Panel2.Controls.Add(this.panel2);
-            this.splitContainer1.Size = new System.Drawing.Size(519, 576);
-            this.splitContainer1.SplitterDistance = 262;
-            this.splitContainer1.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 7);
+            this.label1.Location = new System.Drawing.Point(29, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Specify Survey(s)";
             // 
-            // panel1
+            // panelSelectSurveyInner
             // 
-            this.panel1.Controls.Add(this.optSelectWave);
-            this.panel1.Controls.Add(this.lstCountryWave);
-            this.panel1.Controls.Add(this.optSelectCountry);
-            this.panel1.Controls.Add(this.optSelectSurvey);
-            this.panel1.Controls.Add(this.cmdRemoveSurvey);
-            this.panel1.Controls.Add(this.lstSelectedSurveys);
-            this.panel1.Controls.Add(this.cboSelectSurvey);
-            this.panel1.Controls.Add(this.cmdAddSurvey);
-            this.panel1.Location = new System.Drawing.Point(0, 30);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(516, 245);
-            this.panel1.TabIndex = 4;
+            this.panelSelectSurveyInner.Controls.Add(this.lstSelectedSurveys);
+            this.panelSelectSurveyInner.Controls.Add(this.optSelectWave);
+            this.panelSelectSurveyInner.Controls.Add(this.lstCountryWave);
+            this.panelSelectSurveyInner.Controls.Add(this.optSelectCountry);
+            this.panelSelectSurveyInner.Controls.Add(this.optSelectSurvey);
+            this.panelSelectSurveyInner.Controls.Add(this.cmdRemoveSurvey);
+            this.panelSelectSurveyInner.Controls.Add(this.cboSelectSurvey);
+            this.panelSelectSurveyInner.Controls.Add(this.cmdAddSurvey);
+            this.panelSelectSurveyInner.Location = new System.Drawing.Point(3, 40);
+            this.panelSelectSurveyInner.Name = "panelSelectSurveyInner";
+            this.panelSelectSurveyInner.Size = new System.Drawing.Size(423, 201);
+            this.panelSelectSurveyInner.TabIndex = 4;
+            // 
+            // lstSelectedSurveys
+            // 
+            this.lstSelectedSurveys.FormattingEnabled = true;
+            this.lstSelectedSurveys.Location = new System.Drawing.Point(325, 9);
+            this.lstSelectedSurveys.Name = "lstSelectedSurveys";
+            this.lstSelectedSurveys.Size = new System.Drawing.Size(83, 121);
+            this.lstSelectedSurveys.TabIndex = 10;
             // 
             // optSelectWave
             // 
@@ -186,14 +189,6 @@
             this.cmdRemoveSurvey.UseVisualStyleBackColor = true;
             this.cmdRemoveSurvey.Click += new System.EventHandler(this.cmdRemoveSurvey_Click);
             // 
-            // lstSelectedSurveys
-            // 
-            this.lstSelectedSurveys.FormattingEnabled = true;
-            this.lstSelectedSurveys.Location = new System.Drawing.Point(325, 9);
-            this.lstSelectedSurveys.Name = "lstSelectedSurveys";
-            this.lstSelectedSurveys.Size = new System.Drawing.Size(83, 108);
-            this.lstSelectedSurveys.TabIndex = 3;
-            // 
             // cboSelectSurvey
             // 
             this.cboSelectSurvey.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
@@ -213,64 +208,97 @@
             this.cmdAddSurvey.UseVisualStyleBackColor = true;
             this.cmdAddSurvey.Click += new System.EventHandler(this.cmdAddSurvey_Click);
             // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Enabled = false;
+            this.radioButton10.Location = new System.Drawing.Point(18, 60);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(68, 17);
+            this.radioButton10.TabIndex = 13;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.Text = "By Qnum";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            // 
+            // lstPrefixes
+            // 
+            this.lstPrefixes.FormattingEnabled = true;
+            this.lstPrefixes.Location = new System.Drawing.Point(112, 41);
+            this.lstPrefixes.Name = "lstPrefixes";
+            this.lstPrefixes.Size = new System.Drawing.Size(72, 134);
+            this.lstPrefixes.TabIndex = 12;
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Location = new System.Drawing.Point(18, 37);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(66, 17);
+            this.radioButton9.TabIndex = 11;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.Text = "By Prefix";
+            this.radioButton9.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(18, 14);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(84, 17);
+            this.radioButton8.TabIndex = 10;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "By VarName";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
+            // cmdRemoveVar
+            // 
+            this.cmdRemoveVar.Location = new System.Drawing.Point(290, 41);
+            this.cmdRemoveVar.Name = "cmdRemoveVar";
+            this.cmdRemoveVar.Size = new System.Drawing.Size(28, 20);
+            this.cmdRemoveVar.TabIndex = 6;
+            this.cmdRemoveVar.Text = "<";
+            this.cmdRemoveVar.UseVisualStyleBackColor = true;
+            this.cmdRemoveVar.Click += new System.EventHandler(this.cmdRemoveVar_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 7);
+            this.label2.Location = new System.Drawing.Point(29, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 13);
             this.label2.TabIndex = 9;
             this.label2.Text = "Specify VarName(s)";
             // 
-            // panel2
+            // cmdAddVar
             // 
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.listBox2);
-            this.panel2.Controls.Add(this.comboBox2);
-            this.panel2.Location = new System.Drawing.Point(3, 29);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(243, 115);
-            this.panel2.TabIndex = 8;
+            this.cmdAddVar.Location = new System.Drawing.Point(290, 13);
+            this.cmdAddVar.Name = "cmdAddVar";
+            this.cmdAddVar.Size = new System.Drawing.Size(28, 21);
+            this.cmdAddVar.TabIndex = 5;
+            this.cmdAddVar.Text = ">";
+            this.cmdAddVar.UseVisualStyleBackColor = true;
+            this.cmdAddVar.Click += new System.EventHandler(this.cmdAddVar_Click);
             // 
-            // button3
+            // lstSelectedVarNames
             // 
-            this.button3.Location = new System.Drawing.Point(112, 33);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(25, 19);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.lstSelectedVarNames.FormattingEnabled = true;
+            this.lstSelectedVarNames.Location = new System.Drawing.Point(322, 14);
+            this.lstSelectedVarNames.Name = "lstSelectedVarNames";
+            this.lstSelectedVarNames.Size = new System.Drawing.Size(83, 108);
+            this.lstSelectedVarNames.TabIndex = 7;
             // 
-            // button4
+            // cboSelectVarName
             // 
-            this.button4.Location = new System.Drawing.Point(110, 5);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(28, 18);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(156, 3);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(83, 108);
-            this.listBox2.TabIndex = 7;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(8, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(92, 21);
-            this.comboBox2.TabIndex = 4;
+            this.cboSelectVarName.FormattingEnabled = true;
+            this.cboSelectVarName.Location = new System.Drawing.Point(195, 13);
+            this.cboSelectVarName.Name = "cboSelectVarName";
+            this.cboSelectVarName.Size = new System.Drawing.Size(92, 21);
+            this.cboSelectVarName.TabIndex = 4;
             // 
             // cmdExpandSurveyPanel
             // 
-            this.cmdExpandSurveyPanel.Location = new System.Drawing.Point(23, 53);
+            this.cmdExpandSurveyPanel.Location = new System.Drawing.Point(6, 3);
             this.cmdExpandSurveyPanel.Name = "cmdExpandSurveyPanel";
             this.cmdExpandSurveyPanel.Size = new System.Drawing.Size(23, 20);
             this.cmdExpandSurveyPanel.TabIndex = 5;
@@ -280,7 +308,7 @@
             // 
             // cmdExpandVarNamePanel
             // 
-            this.cmdExpandVarNamePanel.Location = new System.Drawing.Point(23, 355);
+            this.cmdExpandVarNamePanel.Location = new System.Drawing.Point(6, 5);
             this.cmdExpandVarNamePanel.Name = "cmdExpandVarNamePanel";
             this.cmdExpandVarNamePanel.Size = new System.Drawing.Size(23, 20);
             this.cmdExpandVarNamePanel.TabIndex = 6;
@@ -288,89 +316,29 @@
             this.cmdExpandVarNamePanel.UseVisualStyleBackColor = true;
             this.cmdExpandVarNamePanel.Click += new System.EventHandler(this.cmdExpandVarNamePanel_Click);
             // 
-            // label3
+            // lblSurveyBasedReports
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(712, 48);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Compare Surveys";
+            this.lblSurveyBasedReports.AutoSize = true;
+            this.lblSurveyBasedReports.Location = new System.Drawing.Point(8, 14);
+            this.lblSurveyBasedReports.Name = "lblSurveyBasedReports";
+            this.lblSurveyBasedReports.Size = new System.Drawing.Size(55, 13);
+            this.lblSurveyBasedReports.TabIndex = 7;
+            this.lblSurveyBasedReports.Text = "By Survey";
             // 
-            // label4
+            // lblVarNameBasedReports
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(716, 71);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "List Variables";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(708, 111);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(109, 17);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "Include Wordings";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(707, 151);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(95, 17);
-            this.checkBox2.TabIndex = 10;
-            this.checkBox2.Text = "Include Labels";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(732, 176);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(62, 17);
-            this.checkBox3.TabIndex = 11;
-            this.checkBox3.Text = "Domain";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(732, 201);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(53, 17);
-            this.checkBox4.TabIndex = 12;
-            this.checkBox4.Text = "Topic";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(732, 224);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(63, 17);
-            this.checkBox5.TabIndex = 13;
-            this.checkBox5.Text = "Content";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(732, 247);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(68, 17);
-            this.checkBox6.TabIndex = 14;
-            this.checkBox6.Text = "VarLabel";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.lblVarNameBasedReports.AutoSize = true;
+            this.lblVarNameBasedReports.Location = new System.Drawing.Point(8, 179);
+            this.lblVarNameBasedReports.Name = "lblVarNameBasedReports";
+            this.lblVarNameBasedReports.Size = new System.Drawing.Size(60, 13);
+            this.lblVarNameBasedReports.TabIndex = 8;
+            this.lblVarNameBasedReports.Text = "By Variable";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(93, 10);
+            this.label5.Location = new System.Drawing.Point(22, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(179, 31);
             this.label5.TabIndex = 15;
@@ -425,7 +393,7 @@
             // 
             // cmdGenerateReport
             // 
-            this.cmdGenerateReport.Location = new System.Drawing.Point(1005, 525);
+            this.cmdGenerateReport.Location = new System.Drawing.Point(900, 309);
             this.cmdGenerateReport.Name = "cmdGenerateReport";
             this.cmdGenerateReport.Size = new System.Drawing.Size(86, 35);
             this.cmdGenerateReport.TabIndex = 16;
@@ -433,70 +401,314 @@
             this.cmdGenerateReport.UseVisualStyleBackColor = true;
             this.cmdGenerateReport.Click += new System.EventHandler(this.cmdGenerateReport_Click);
             // 
+            // cmdWordingOptions
+            // 
+            this.cmdWordingOptions.Location = new System.Drawing.Point(682, 86);
+            this.cmdWordingOptions.Name = "cmdWordingOptions";
+            this.cmdWordingOptions.Size = new System.Drawing.Size(113, 23);
+            this.cmdWordingOptions.TabIndex = 18;
+            this.cmdWordingOptions.Text = "Wording Options";
+            this.cmdWordingOptions.UseVisualStyleBackColor = true;
+            this.cmdWordingOptions.Visible = false;
+            this.cmdWordingOptions.Click += new System.EventHandler(this.OpenWordingOptionsForm);
+            // 
+            // optSurveyOverview
+            // 
+            this.optSurveyOverview.AutoSize = true;
+            this.optSurveyOverview.Location = new System.Drawing.Point(11, 96);
+            this.optSurveyOverview.Name = "optSurveyOverview";
+            this.optSurveyOverview.Size = new System.Drawing.Size(106, 17);
+            this.optSurveyOverview.TabIndex = 19;
+            this.optSurveyOverview.TabStop = true;
+            this.optSurveyOverview.Tag = "4";
+            this.optSurveyOverview.Text = "Survey Overview";
+            this.optSurveyOverview.UseVisualStyleBackColor = true;
+            this.optSurveyOverview.CheckedChanged += new System.EventHandler(this.SurveyReportTypeChange);
+            // 
+            // optSurveySections
+            // 
+            this.optSurveySections.AutoSize = true;
+            this.optSurveySections.Location = new System.Drawing.Point(11, 119);
+            this.optSurveySections.Name = "optSurveySections";
+            this.optSurveySections.Size = new System.Drawing.Size(66, 17);
+            this.optSurveySections.TabIndex = 20;
+            this.optSurveySections.TabStop = true;
+            this.optSurveySections.Tag = "5";
+            this.optSurveySections.Text = "Sections";
+            this.optSurveySections.UseVisualStyleBackColor = true;
+            this.optSurveySections.CheckedChanged += new System.EventHandler(this.SurveyReportTypeChange);
+            // 
+            // optSurveySyntax
+            // 
+            this.optSurveySyntax.AutoSize = true;
+            this.optSurveySyntax.Location = new System.Drawing.Point(11, 142);
+            this.optSurveySyntax.Name = "optSurveySyntax";
+            this.optSurveySyntax.Size = new System.Drawing.Size(57, 17);
+            this.optSurveySyntax.TabIndex = 21;
+            this.optSurveySyntax.TabStop = true;
+            this.optSurveySyntax.Tag = "6";
+            this.optSurveySyntax.Text = "Syntax";
+            this.optSurveySyntax.UseVisualStyleBackColor = true;
+            this.optSurveySyntax.CheckedChanged += new System.EventHandler(this.SurveyReportTypeChange);
+            // 
+            // optSurveyByVarName
+            // 
+            this.optSurveyByVarName.AutoSize = true;
+            this.optSurveyByVarName.Location = new System.Drawing.Point(11, 30);
+            this.optSurveyByVarName.Name = "optSurveyByVarName";
+            this.optSurveyByVarName.Size = new System.Drawing.Size(154, 17);
+            this.optSurveyByVarName.TabIndex = 23;
+            this.optSurveyByVarName.TabStop = true;
+            this.optSurveyByVarName.Tag = "1";
+            this.optSurveyByVarName.Text = "Survey Report by VarName";
+            this.optSurveyByVarName.UseVisualStyleBackColor = true;
+            this.optSurveyByVarName.CheckedChanged += new System.EventHandler(this.SurveyReportTypeChange);
+            // 
+            // optSurveyByLabel
+            // 
+            this.optSurveyByLabel.AutoSize = true;
+            this.optSurveyByLabel.Location = new System.Drawing.Point(11, 52);
+            this.optSurveyByLabel.Name = "optSurveyByLabel";
+            this.optSurveyByLabel.Size = new System.Drawing.Size(136, 17);
+            this.optSurveyByLabel.TabIndex = 24;
+            this.optSurveyByLabel.TabStop = true;
+            this.optSurveyByLabel.Tag = "2";
+            this.optSurveyByLabel.Text = "Survey Report by Label";
+            this.optSurveyByLabel.UseVisualStyleBackColor = true;
+            this.optSurveyByLabel.CheckedChanged += new System.EventHandler(this.SurveyReportTypeChange);
+            // 
+            // optOrderCompare
+            // 
+            this.optOrderCompare.AutoSize = true;
+            this.optOrderCompare.Location = new System.Drawing.Point(11, 75);
+            this.optOrderCompare.Name = "optOrderCompare";
+            this.optOrderCompare.Size = new System.Drawing.Size(184, 17);
+            this.optOrderCompare.TabIndex = 25;
+            this.optOrderCompare.TabStop = true;
+            this.optOrderCompare.Tag = "3";
+            this.optOrderCompare.Text = "Order Comparison (req. 2 surveys)";
+            this.optOrderCompare.UseVisualStyleBackColor = true;
+            this.optOrderCompare.CheckedChanged += new System.EventHandler(this.SurveyReportTypeChange);
+            // 
+            // cmdLabelOptions
+            // 
+            this.cmdLabelOptions.Location = new System.Drawing.Point(682, 147);
+            this.cmdLabelOptions.Name = "cmdLabelOptions";
+            this.cmdLabelOptions.Size = new System.Drawing.Size(113, 26);
+            this.cmdLabelOptions.TabIndex = 26;
+            this.cmdLabelOptions.Text = "Label Options";
+            this.cmdLabelOptions.UseVisualStyleBackColor = true;
+            this.cmdLabelOptions.Visible = false;
+            this.cmdLabelOptions.Click += new System.EventHandler(this.OpenLabelOptionsForm);
+            // 
+            // cmdCommentOptions
+            // 
+            this.cmdCommentOptions.Location = new System.Drawing.Point(682, 212);
+            this.cmdCommentOptions.Name = "cmdCommentOptions";
+            this.cmdCommentOptions.Size = new System.Drawing.Size(113, 24);
+            this.cmdCommentOptions.TabIndex = 27;
+            this.cmdCommentOptions.Text = "Comment Options";
+            this.cmdCommentOptions.UseVisualStyleBackColor = true;
+            this.cmdCommentOptions.Visible = false;
+            this.cmdCommentOptions.Click += new System.EventHandler(this.OpenCommentOptionsForm);
+            // 
+            // cmdTranslationOptions
+            // 
+            this.cmdTranslationOptions.Location = new System.Drawing.Point(682, 268);
+            this.cmdTranslationOptions.Name = "cmdTranslationOptions";
+            this.cmdTranslationOptions.Size = new System.Drawing.Size(113, 23);
+            this.cmdTranslationOptions.TabIndex = 28;
+            this.cmdTranslationOptions.Text = "Translation Options";
+            this.cmdTranslationOptions.UseVisualStyleBackColor = true;
+            this.cmdTranslationOptions.Visible = false;
+            this.cmdTranslationOptions.Click += new System.EventHandler(this.OpenTranslationFormOptions);
+            // 
+            // optHarmony
+            // 
+            this.optHarmony.AutoSize = true;
+            this.optHarmony.Location = new System.Drawing.Point(11, 195);
+            this.optHarmony.Name = "optHarmony";
+            this.optHarmony.Size = new System.Drawing.Size(67, 17);
+            this.optHarmony.TabIndex = 29;
+            this.optHarmony.TabStop = true;
+            this.optHarmony.Tag = "7";
+            this.optHarmony.Text = "Harmony";
+            this.optHarmony.UseVisualStyleBackColor = true;
+            this.optHarmony.CheckedChanged += new System.EventHandler(this.SurveyReportTypeChange);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.optProductCrosstab);
+            this.panel2.Controls.Add(this.lblLabelBasedReports);
+            this.panel2.Controls.Add(this.optVarList);
+            this.panel2.Controls.Add(this.optOrderCompare);
+            this.panel2.Controls.Add(this.optHarmony);
+            this.panel2.Controls.Add(this.optSurveyByLabel);
+            this.panel2.Controls.Add(this.lblVarNameBasedReports);
+            this.panel2.Controls.Add(this.optSurveyByVarName);
+            this.panel2.Controls.Add(this.optSurveySyntax);
+            this.panel2.Controls.Add(this.optSurveySections);
+            this.panel2.Controls.Add(this.optSurveyOverview);
+            this.panel2.Controls.Add(this.lblSurveyBasedReports);
+            this.panel2.Location = new System.Drawing.Point(17, 56);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(207, 296);
+            this.panel2.TabIndex = 30;
+            // 
+            // optProductCrosstab
+            // 
+            this.optProductCrosstab.AutoSize = true;
+            this.optProductCrosstab.Location = new System.Drawing.Point(11, 267);
+            this.optProductCrosstab.Name = "optProductCrosstab";
+            this.optProductCrosstab.Size = new System.Drawing.Size(106, 17);
+            this.optProductCrosstab.TabIndex = 32;
+            this.optProductCrosstab.TabStop = true;
+            this.optProductCrosstab.Tag = "9";
+            this.optProductCrosstab.Text = "Product Crosstab";
+            this.optProductCrosstab.UseVisualStyleBackColor = true;
+            // 
+            // lblLabelBasedReports
+            // 
+            this.lblLabelBasedReports.AutoSize = true;
+            this.lblLabelBasedReports.Location = new System.Drawing.Point(8, 251);
+            this.lblLabelBasedReports.Name = "lblLabelBasedReports";
+            this.lblLabelBasedReports.Size = new System.Drawing.Size(48, 13);
+            this.lblLabelBasedReports.TabIndex = 31;
+            this.lblLabelBasedReports.Text = "By Label";
+            // 
+            // optVarList
+            // 
+            this.optVarList.AutoSize = true;
+            this.optVarList.Location = new System.Drawing.Point(11, 218);
+            this.optVarList.Name = "optVarList";
+            this.optVarList.Size = new System.Drawing.Size(82, 17);
+            this.optVarList.TabIndex = 30;
+            this.optVarList.TabStop = true;
+            this.optVarList.Tag = "8";
+            this.optVarList.Text = "Variable List";
+            this.optVarList.UseVisualStyleBackColor = true;
+            this.optVarList.CheckedChanged += new System.EventHandler(this.SurveyReportTypeChange);
+            // 
+            // panelSelectSurveyOuter
+            // 
+            this.panelSelectSurveyOuter.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panelSelectSurveyOuter.Controls.Add(this.label1);
+            this.panelSelectSurveyOuter.Controls.Add(this.panelSelectSurveyInner);
+            this.panelSelectSurveyOuter.Controls.Add(this.cmdExpandSurveyPanel);
+            this.panelSelectSurveyOuter.Location = new System.Drawing.Point(230, 56);
+            this.panelSelectSurveyOuter.Name = "panelSelectSurveyOuter";
+            this.panelSelectSurveyOuter.Size = new System.Drawing.Size(430, 245);
+            this.panelSelectSurveyOuter.TabIndex = 32;
+            // 
+            // panelSelectVarNameInner
+            // 
+            this.panelSelectVarNameInner.Controls.Add(this.checkBox1);
+            this.panelSelectVarNameInner.Controls.Add(this.radioButton10);
+            this.panelSelectVarNameInner.Controls.Add(this.cboSelectVarName);
+            this.panelSelectVarNameInner.Controls.Add(this.lstSelectedVarNames);
+            this.panelSelectVarNameInner.Controls.Add(this.lstPrefixes);
+            this.panelSelectVarNameInner.Controls.Add(this.radioButton9);
+            this.panelSelectVarNameInner.Controls.Add(this.cmdAddVar);
+            this.panelSelectVarNameInner.Controls.Add(this.cmdRemoveVar);
+            this.panelSelectVarNameInner.Controls.Add(this.radioButton8);
+            this.panelSelectVarNameInner.Location = new System.Drawing.Point(6, 37);
+            this.panelSelectVarNameInner.Name = "panelSelectVarNameInner";
+            this.panelSelectVarNameInner.Size = new System.Drawing.Size(420, 199);
+            this.panelSelectVarNameInner.TabIndex = 33;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(195, 154);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(151, 17);
+            this.checkBox1.TabIndex = 14;
+            this.checkBox1.Text = "Include unused VarNames";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // panelSelectVarNameOuter
+            // 
+            this.panelSelectVarNameOuter.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panelSelectVarNameOuter.Controls.Add(this.label2);
+            this.panelSelectVarNameOuter.Controls.Add(this.panelSelectVarNameInner);
+            this.panelSelectVarNameOuter.Controls.Add(this.cmdExpandVarNamePanel);
+            this.panelSelectVarNameOuter.Location = new System.Drawing.Point(230, 306);
+            this.panelSelectVarNameOuter.Name = "panelSelectVarNameOuter";
+            this.panelSelectVarNameOuter.Size = new System.Drawing.Size(430, 245);
+            this.panelSelectVarNameOuter.TabIndex = 34;
+            // 
+            // lblReportOptions
+            // 
+            this.lblReportOptions.AutoSize = true;
+            this.lblReportOptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReportOptions.Location = new System.Drawing.Point(678, 56);
+            this.lblReportOptions.Name = "lblReportOptions";
+            this.lblReportOptions.Size = new System.Drawing.Size(117, 20);
+            this.lblReportOptions.TabIndex = 35;
+            this.lblReportOptions.Text = "Report Options";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(704, 116);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.TabIndex = 36;
+            // 
             // ReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1211, 758);
+            this.ClientSize = new System.Drawing.Size(1019, 566);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblReportOptions);
+            this.Controls.Add(this.panelSelectVarNameOuter);
+            this.Controls.Add(this.panelSelectSurveyOuter);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.cmdTranslationOptions);
+            this.Controls.Add(this.cmdCommentOptions);
+            this.Controls.Add(this.cmdLabelOptions);
+            this.Controls.Add(this.cmdWordingOptions);
             this.Controls.Add(this.cmdGenerateReport);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.cmdExpandSurveyPanel);
-            this.Controls.Add(this.cmdExpandVarNamePanel);
-            this.Controls.Add(this.splitContainer1);
             this.Name = "ReportForm";
             this.Text = "ISIS Reporter";
-            this.Load += new System.EventHandler(this.ISISReporter_Load);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.PerformLayout();
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            this.splitContainer1.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.ReportForm_Load);
+            this.panelSelectSurveyInner.ResumeLayout(false);
+            this.panelSelectSurveyInner.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.qrySurveyQuestionsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._isisDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qrySurveyInfoBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qryStudyWavesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qryCountryCodesBindingSource1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panelSelectSurveyOuter.ResumeLayout(false);
+            this.panelSelectSurveyOuter.PerformLayout();
+            this.panelSelectVarNameInner.ResumeLayout(false);
+            this.panelSelectVarNameInner.PerformLayout();
+            this.panelSelectVarNameOuter.ResumeLayout(false);
+            this.panelSelectVarNameOuter.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.ListBox lstSelectedSurveys;
         private System.Windows.Forms.Button cmdRemoveSurvey;
         private System.Windows.Forms.ComboBox cboSelectSurvey;
         private System.Windows.Forms.Button cmdAddSurvey;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ListBox lstSelectedVarNames;
+        private System.Windows.Forms.Button cmdRemoveVar;
+        private System.Windows.Forms.Button cmdAddVar;
+        private System.Windows.Forms.ComboBox cboSelectVarName;
         private System.Windows.Forms.Button cmdExpandSurveyPanel;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelSelectSurveyInner;
         private System.Windows.Forms.Button cmdExpandVarNamePanel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.Label lblSurveyBasedReports;
+        private System.Windows.Forms.Label lblVarNameBasedReports;
         private System.Windows.Forms.RadioButton optSelectSurvey;
         private System.Windows.Forms.RadioButton optSelectWave;
         private System.Windows.Forms.ListBox lstCountryWave;
@@ -518,6 +730,32 @@
         private System.Windows.Forms.BindingSource qryCountryCodesBindingSource1;
         private _isisDataSetTableAdapters.qryCountryCodesTableAdapter qryCountryCodesTableAdapter;
         private System.Windows.Forms.Button cmdGenerateReport;
+        private System.Windows.Forms.Button cmdWordingOptions;
+        private System.Windows.Forms.RadioButton optSurveyOverview;
+        private System.Windows.Forms.RadioButton optSurveySections;
+        private System.Windows.Forms.RadioButton optSurveySyntax;
+        private System.Windows.Forms.RadioButton optSurveyByVarName;
+        private System.Windows.Forms.RadioButton optSurveyByLabel;
+        private System.Windows.Forms.RadioButton optOrderCompare;
+        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.ListBox lstPrefixes;
+        private System.Windows.Forms.Button cmdLabelOptions;
+        private System.Windows.Forms.Button cmdCommentOptions;
+        private System.Windows.Forms.Button cmdTranslationOptions;
+        private System.Windows.Forms.RadioButton optHarmony;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RadioButton optVarList;
+        private System.Windows.Forms.ListBox lstSelectedSurveys;
+        private System.Windows.Forms.Panel panelSelectSurveyOuter;
+        private System.Windows.Forms.Panel panelSelectVarNameInner;
+        private System.Windows.Forms.Panel panelSelectVarNameOuter;
+        private System.Windows.Forms.RadioButton optProductCrosstab;
+        private System.Windows.Forms.Label lblLabelBasedReports;
+        private System.Windows.Forms.Label lblReportOptions;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

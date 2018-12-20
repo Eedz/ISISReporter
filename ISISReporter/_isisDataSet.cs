@@ -6,3 +6,10 @@
     {
     }
 }
+
+namespace ISISReporter._isisDataSetTableAdapters {
+    
+    
+    public partial class qryCommentsQuesTableAdapter {
+    }
+}
